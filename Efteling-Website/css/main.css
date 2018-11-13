@@ -1,0 +1,120 @@
+/* fonts */
+@font-face {
+    font-family: eftelfont;
+    src: url("../fonts/PopupFontBold.ttf");
+}
+
+/* main class */
+body {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.headerFont {
+    font-family: eftelfont;
+}
+
+.headerText {
+    color: #800000;
+    letter-spacing: 5px;
+    margin: 50px;
+    background-color: aqua;
+    text-align: center;
+    width: 20%;
+}
+
+.box {
+    text-align: center;
+}
+
+.navbar {
+    background-image: url("../img/efteling.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.button {
+    background-color: purple;
+    color: yellow;
+    padding: 5px;
+    text-decoration: none;
+    border: 2px solid yellow;
+    transition: 0.5s;
+}
+
+.button:hover {
+    color: white;
+    transition: 0.5s;
+    border: 10px solid #800000;
+}
+
+.button-active {
+    background-color: green;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    border: 2px solid red;
+}
+
+/* page */
+.inner {
+    margin: auto;
+    text-align: center;
+    max-width: 70%;
+    background-color: purple;
+    color: yellow;
+    padding: 5px;
+    text-decoration: none;
+    border: 10px solid yellow;
+    box-shadow: 10px 15px black;
+}
+
+.rideimg {
+    max-width: 70%;
+}
+
+.yellow {
+    color: yellow;
+}
+
+/* table, met hover en even style */
+td, th {
+    border: 1px solid mediumpurple;
+    padding: 8px;
+}
+
+tr {
+    transition: 0.5s;
+    font-family: eftelfont;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #800000;
+    font-family: eftelfont;
+    color: white;
+}
+
+tr:hover {
+    transition: 0.7s;
+    background-color: black;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}

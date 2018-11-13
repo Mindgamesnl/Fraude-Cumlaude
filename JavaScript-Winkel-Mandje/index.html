@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 40%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .button {
+            background-color: limegreen; /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .button-red {
+            background-color: red; /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+
+    <script src="js/CookieUtility.js"></script>
+    <script src="js/CartItem.js"></script>
+    <script src="js/ItemDatabase.js"></script>
+    <script src="js/UserInterface.js"></script>
+
+</head>
+<body>
+
+<center>
+    <h1>
+        Alle items die we hebben:
+    </h1>
+
+
+    <table id="items-table">
+        <tr>
+            <th>Id</th>
+            <th>Naam</th>
+            <th>Over</th>
+            <th>Prijs</th>
+            <th>Acties</th>
+        </tr>
+    </table>
+</center>
+
+<hr />
+
+<center>
+    <h1>Jouw winkel wagentje</h1>
+    <input type="button" class="button-red" value="Clear cart" onclick="clearCart()">
+    <br>
+    <br>
+    <table id="cart-table">
+        <tr>
+            <th>Id</th>
+            <th>Naam</th>
+            <th>Over</th>
+            <th>Prijs</th>
+            <th>Acties</th>
+        </tr>
+    </table>
+</center>
+
+</body>
+</html>
